@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Input Demo</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" ></script>
+    <script type="text/javascript" src="nopasswordmanagerinput.js"></script>
+
+    <script type="text/javascript">
+        $( document ).ready(function() {
+            $('input[type="password"]').noPasswordManager({
+                displayPasswordButton : true
+            });
+        });
+    </script>
+
+</head>
+<body>
+
+    <form method="get">
+
+        <input type="mail" name="mail" /><br />
+        <input type="password" name="password" placeholder="Uw wachtwoord" /><br />
+
+        <input type="submit" />
+
+    </form>
+
+</body>
+</html>
